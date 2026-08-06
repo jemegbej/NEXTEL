@@ -1,1 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>NEXTEL CONNECT</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+:root{
+--green:#3B7A3F;      
+--green2:#2F6332;     
+--lemon:#EAFB63;     
+--card:#3B7A3F;
+--text:#ffffff;
+--bg:#3B7A3F;
+}
+body{
+background:var(--green);
+color:#ffffff;
+overflow-x:hidden;
+}
+.hero{
+background:
+linear-gradient(rgba(59,122,63,.88),rgba(47,99,50,.90)),url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400');background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff}
+.logo{font-size:42px;font-weight:800}.logo span{display:block;font-size:14px;color:#eee}
+.hero h1{font-size:48px;margin:20px 0}.hero p{max-width:900px;line-height:1.9}
+.btns{display:flex;gap:15px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.btn{padding:15px 30px;border-radius:50px;font-weight:700;text-decoration:none;transition:.3s}
+.btn:hover,.card:hover,.stat:hover{transform:translateY(-6px)}
+.btn-primary{
+background:var(--lemon);
+color:var(--green);
+font-weight:700;box-shadow:0 10px 30px rgba(123,47,247,.3)}
+.btn-secondary{
+background:#ffffff;
+color:var(--green);
+border:2px solid var(--lemon);
+}
+.section{padding:80px 20px}
+.title{text-align:center;color:var(--lemon);font-size:38px;margin-bottom:35px}
+.grid,.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;max-width:1200px;margin:auto}
+.stats{padding:60px 20px}
+.stat,.card{
+background:#4A8C4F;
+color:#ffffff;backdrop-filter:blur(10px);padding:25px;border-radius:22px;box-shadow:0 12px 35px rgba(0,0,0,.08);border:1px solid rgba(123,47,247,.12);transition:.3s}
+.stat h2,.card h3{color:var(--lemon)}
+.card p,.stat p{
+color:#ffffff;line-height:1.8}
+.live-popup{position:fixed;left:20px;bottom:20px;width:320px;background:#fff;color:#222;border-left:6px solid var(--purple);border-radius:18px;padding:15px;box-shadow:0 15px 40px rgba(0,0,0,.18);display:none;z-index:9999}
+.live-title{color:var(--purple);font-weight:700}.live-time{color:#666;font-size:12px;margin-top:5px}
+footer{background:linear-gradient(90deg,var(--green),var(--green2));color:#fff;text-align:center;padding:45px;margin-top:50px}
+@keyframes slideUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:768px){.hero h1{font-size:34px}.title{font-size:30px}}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="logo"> Nextel <span> </div>
+
+<h1>Where. Every call. Creates value.</h1>
+
+<p>
+Nextel Connect is Nigeria's premium digital earning ecosystem, built around network participation, structured rewards, and real payouts.
+</p>
+
+<div class="btns">
+<a href="register.html" class="btn btn-primary">CREATE ACCOUNT</a>
+<a href="login.html" class="btn btn-secondary">LOGIN</a>
+</div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+<div class="stat"><h2>10,000+</h2><p>Active Users</p></div>
+<div class="stat"><h2>5,000+</h2><p>AI Videos Created</p></div>
+<div class="stat"><h2>2,500+</h2><p>Activated Accounts</p></div>
+<div class="stat"><h2>60+</h2><p>Countries</p></div>
+<div class="stat"><h2>24/7</h2><p>Support Access</p></div>
+</section>
+
+<!-- WHY NEXTEL -->
+<section class="section">
+<h2 class="title">Why Choose NEXTEL</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🚀 Complete AI Ecosystem</h3>
+<p>NEXTEL is not just one tool — it is a full ecosystem combining learning, earning, content creation, and monetization in one platform.</p>
+</div>
+
+<div class="card">
+<h3>💰 Multiple Income Streams</h3>
+<p>Users can earn through CALLS, AI videos, WhatsApp sharing, referrals, news reading, fan battles, and more — giving multiple ways to generate income daily.</p>
+</div>
+<div class="card">
+<h3>📱 Beginner Friendly</h3>
+<p>Even without technical skills, users can start earning. Every feature is designed with simple steps and easy navigation.</p>
+</div>
+
+<div class="card">
+<h3>🔒 Secure & Reliable</h3>
+<p>Your data, earnings, and account activity are protected with a secure system designed for trust and transparency.</p>
+</div>
+
+</div>
+</section>
+
+<!-- FEATURES (DETAILED) -->
+<section class="section">
+<h2 class="title">Platform Features</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>📞 Calls Reward</h3>
+<p>Get paid per second for making or receiving verified brand calls. You earn ₦628 for 1 minute and up to ₦4,660 for 20 minutes. (Note: This feature is exclusive to the Royal eSIM).</p>
+</div>
+
+<div class="card">
+<h3>💬 SMS reward</h3>
+<p>Earn ₦15 to ₦50 per message just for opening brand texts, downloading their apps, or using your promo code.</p>
+</div>
+
+<div class="card">
+<h3>📰 News Reward System</h3>
+<p>Read daily curated news articles from different regions and earn rewards up to ₦7,000 daily based on engagement and consistency.</p>
+</div>
+
+<div class="card"> 
+<h3>NEXTEL SHARES</h3>
+<p> IF you don't want to make calls, you can become a shareholder and earn a steady 1% dividend from Nextel's global call and SMS traffic.</p>
+</div>
+
+<div class="card">
+<h3>📱 WhatsApp Reward System</h3>
+<p>Users earn by sharing AI-generated content on WhatsApp status and engaging with promotional materials.</p>
+</div>
+
+<div class="card">
+<h3>▶️ YouTube Monetization System</h3>
+<p>Users can create AI content and grow YouTube channels while earning through traffic, engagement, and monetization support tools.</p>
+</div>
+
+
+<div class="card">
+<h3>🎙️ Voice Vault</h3>
+<p>Users can upload and share voice content, storytelling, and opinions to earn engagement-based rewards.</p>
+</div>
+
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+<h2 class="title">How It Works</h2>
+
+<div class="grid">
+
+<div class="card"><h3>1. Register</h3><p>Create your account on NEXTEL platform.</p></div>
+<div class="card"><h3>2. Login</h3><p>Access your personal dashboard securely.</p></div>
+<div class="card"><h3>3. Activate Account</h3><p>Complete activation to unlock earning features (not free).</p></div>
+<div class="card"><h3>4. Make calls</h3><p>Start with simple 10-minute AI Calls.</p></div>
+<div class="card"><h3>5. Choose Earnings Path</h3><p>Select from quizzes, videos, WhatsApp or news rewards.</p></div>
+<div class="card"><h3>6. Complete Tasks</h3><p>Perform daily activities and earn rewards.</p></div>
+<div class="card"><h3>7. Withdraw Earnings</h3><p>Transfer your earnings directly to your bank account.</p></div>
+
+</div>
+</section>
+
+<!-- ================= EARNING PLANS ================= -->
+<section class="section">
+<h2 class="title">Nextel Earning Plans</h2>
+
+<div class="grid">
+
+<!-- ================= DIAMOND PLAN ================= -->
+<div class="card">
+<h3>  DIAMOND PLAN </h3>
+
+<p>
+<b>Enrollment Fee:</b> ₦10,500 
+</p>
+
+<br>
+
+<p><b>💰 EARNING STRUCTURE</b></p>
+
+<br>
+
+<p>
+💰 <b>Instant Cashback</b><br>
+Earn ₦8,000 ($4.50) instantly after successful activation.
+</p>
+
+<br>
+
+<p>
+🤝 <b>Direct CALL Bonus</b><br>
+Earn ₦7,200 ($3.60) for every direct referral.
+</p>
+
+<br>
+
+<p>
+🌟 <b>Indirect Referral Bonuses</b><br>
+• 1st Level Indirect Bonus: ₦300 ($0.15)<br>
+• 2nd Level Indirect Bonus: ₦100 ($0.05)
+</p>
+
+<br>
+
+<p>
+📞 <b>CALL Rewards</b><br>
+• call Upload Reward: ₦1,500 ($0.75)<br>
+• call Lucky Book Reward: ₦5,000 ($2.50)
+</p>
+
+<br>
+
+<p>
+💬 <b>SMS Reward</b><br>
+Earn up to ₦4,000 ($2.00) by sending messages for higher institutions.
+</p>
+
+<br>
+
+<p>
+▶️ <b>YouTube Earnings</b><br>
+Earn up to ₦20,000 ($10.00) through YouTube engagement tasks.
+</p>
+
+<br>
+
+<p>
+👻 <b>Snapchat Earnings</b><br>
+Earn ₦1,000 ($0.50) from Snapchat activities.
+</p>
+
+<br>
+
+<p>
+🎁 <b>Active User Spillover</b><br>
+Receive ₦1,000 ($0.50) spillover rewards from active network growth.
+</p>
+
+<br>
+
+<p>
+<b>💳 WITHDRAWAL</b><br><br>
+✅ Daily withdrawal available. Minimum ₦20,000 ($7)<br>
+✅ Fast processing to your registered payment account.
+</p>
+  </div>
+  <!-- ================= ROYAL PLAN ================= -->
+<div class="card">
+<h3>🔥NEXTEL ROYAL PLAN 🔥</h3>
+
+<p>
+<b>Enrollment Fee:</b> ₦17,500 ($8.75)
+</p>
+
+<br>
+
+<p><b>━━━━━━━━━━━━━━━</b></p>
+
+<p><b>💰 EARNING STRUCTURE</b></p>
+
+<p><b>━━━━━━━━━━━━━━━</b></p>
+
+<br>
+
+<p>
+🎁 <b>Instant Cashback</b><br>
+Receive ₦16,000 ($8.00) instantly upon successful activation.
+</p>
+
+<br>
+
+<p>
+🤝 <b>Direct Connection Bonus</b><br>
+Earn ₦12,500 ($6.25) for every direct referral.
+</p>
+
+<br>
+
+<p>
+🌟 <b>Spillover Bonuses</b><br>
+• 1st Spillover Bonus – ₦1000 ($0.50)<br>
+• 2nd Spillover Bonus – ₦500 ($0.25)
+</p>
+
+<br>
+
+<p>
+📞 <b> call Rewards</b><br>
+• CALL Upload Reward – ₦2,000 ($1.50)<br>
+• CONSISTENT CALL Reward – ₦10,000 ($5.00)
+</p>
+
+<br>
+
+<p>
+💬 <b>SMS Reward</b><br>
+Earn up to ₦8,000 ($4.00) from Sending activities.
+</p>
+
+<br>
+
+<p>
+▶️ <b>YouTube Earnings</b><br>
+Earn up to ₦40,000 ($20.00) through YouTube engagement tasks.
+</p>
+
+<br>
+
+<p>
+👻 <b>Snapchat Earnings</b><br>
+Earn ₦6,000 ($3.00) from Snapchat-related activities.
+</p>
+
+<br>
+
+<p>
+🎉 <b>Active User Spillover</b><br>
+Receive ₦8,000 ($4.00) from active user spillover rewards.
+</p>
+
+<br>
+
+<p><b>━━━━━━━━━━━━━━━</b></p>
+
+<p><b>💳 WITHDRAWAL</b></p>
+
+<p><b>━━━━━━━━━━━━━━━</b></p>
+
+<br>
+
+<p>
+✅ Daily Withdrawal Available, minimum ₦10,000 ($5)<br>
+✅ Fast Processing<br>
+✅ Secure Payment System
+</p>
+
+</div>
+
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+<h2 class="title">What People Say</h2>
+
+<div class="grid">
+
+<div class="card"><h3>Chinedu A.</h3><p>NEXTEL gave me multiple income streams I never expected.</p></div>
+<div class="card"><h3>Amina B.</h3><p>The call system alone helps me earn daily rewards.</p></div>
+<div class="card"><h3>David O.</h3><p>AI tools are simple and powerful to use.</p></div>
+<div class="card"><h3>Grace N.</h3><p>News system keeps me updated while I earn.</p></div>
+<div class="card"><h3>Emmanuel T.</h3><p>Support is fast and very helpful.</p></div>
+<div class="card"><h3>Esther A.</h3><p>The platform feels modern and trustworthy.</p></div>
+
+</div>
+</section>
+
+<!-- FAQ (EXPANDED VERSION - COPY ONLY THIS SECTION) -->
+<section class="section">
+<h2 class="title">Frequently Asked Questions</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>What is NEXTEL?</h3>
+<p>
+Nextel Connect is Nigeria's premium digital earning ecosystem, built around network participation, structured rewards, and real payouts..
+</p>
+</div>
+
+<div class="card">
+<h3>Is NEXTEL a learning or earning platform?</h3>
+<p>
+NEXTEL is both. It is designed as a hybrid ecosystem where users first learn AI skills through simple lessons and then apply those skills to earn through different earning modules integrated into the platform.
+</p>
+</div>
+
+<div class="card">
+<h3>Is registration free?</h3>
+<p>
+Yes, creating an account on Nextel is free. However, to unlock full earning features, users are required to activate their account through one of the available plans. Activation gives access to all earning systems and rewards.
+</p>
+</div>
+
+<div class="card">
+<h3>How do I activate my account?</h3>
+<p>
+After registering and logging in, you will be guided to the activation page where you can choose a plan (Platinum or Gold). Once payment is completed, your account is upgraded and all earning features become active.
+</p>
+</div>
+
+<div class="card">
+<h3>How do I earn on NEXTEL?</h3>
+<p>
+You earn by completing different activities such as answering CALLS,SEND SMS , watching and rating AI videos, sharing content on WhatsApp, reading news updates, creating AI videos, referring new users, and participating in platform engagement systems.
+</p>
+</div>
+
+<div class="card">
+<h3>How do withdrawals work?</h3>
+<p>
+Withdrawals are processed directly to your registered bank account after reaching the minimum withdrawal threshold. Processing is fast and depends on your activity level and account status.
+</p>
+</div>
+<div class="card">
+<h3>Is NEXTEL available worldwide?</h3>
+<p>
+Yes. NEXTEL is a global platform available to users from multiple countries. The system is designed to support international users with digital earning opportunities regardless of location.
+</p>
+</div>
+
+<div class="card">
+<h3>Do I need experience to use VELORA?</h3>
+<p>
+No experience is required. The platform is beginner-friendly, and all AI learning modules are designed in simple steps so anyone can start earning even without technical knowledge.
+</p>
+</div>
+
+<div class="card">
+<h3>Is NEXTEL safe and secure?</h3>
+<p>
+Yes. NEXTEL uses a secure system to protect user data, earnings, and transactions. All user activities are tracked within a controlled environment to ensure transparency and safety.
+</p>
+</div>
+
+<div class="card">
+<h3>Can I use my phone?</h3>
+<p>
+Yes. NEXTEL works perfectly on Android phones, iPhones, tablets, and computers. The platform is fully mobile-optimized for smooth access anywhere.
+</p>
+</div>
+
+<div class="card">
+<h3>What happens after activation?</h3>
+<p>
+Once activated, you gain full access to all earning modules including AI tools, quizzes, WhatsApp rewards, YouTube systems, news earnings, and referral bonuses. You can immediately start completing tasks and earning.
+</p>
+</div>
+
+</div>
+</section>
+<!-- CTA -->
+<section class="section">
+<h2 class="title">Ready to Join NEXTEL?</h2>
+
+<div class="grid">
+<div class="card">
+<h3>Start Your Journey Today</h3>
+<p>Create your account and start earning through AI-powered opportunities.</p>
+
+<div class="btns">
+<a href="register.html" class="btn btn-primary">CREATE ACCOUNT</a>
+<a href="https://wa.me/2348069702505" class="btn btn-secondary">WHATSAPP SUPPORT</a>
+</div>
+</div>
+</div>
+</section>
+
+<footer>  
+<h3>NEXTEL</h3>  
+<p>Where. Every call. Creates value</p>  <p>WhatsApp Support: +2348069702505</p>  <p>© 2026 VELORA AI ACADEMY. All Rights Reserved.</p>  
+</footer>
+<!-- ===== NEXTEL ACTIVITY POPUP ===== -->
+<div class="live-popup" id="livePopup">
+  <div class="live-title">NEXTEL ACTIVITY FEED</div>
+  <div id="popupMessage"></div>
+  <div class="live-time" id="popupTime"></div>
+</div>
+
+<!-- ===== SOUND ===== -->
+
+<script>
+const messages = [
+"Ade from Lagos, Nigeria just joined NEXTEL",
+"Chinedu from Abuja, Nigeria activated account",
+"Maria from Nairobi, Kenya registered",
+"John from London, UK joined NEXTEL",
+"Fatima from Kano, Nigeria activated account",
+"David from Accra, Ghana signed up",
+"Aisha from Lagos, Nigeria joined NEXTEL",
+"Emmanuel from Port Harcourt, Nigeria activated account",
+"Grace from Toronto, Canada registered",
+"Samuel from Texas, USA joined",
+"Blessing from Ogun, Nigeria activated",
+"Ahmed from Cairo, Egypt joined NEXTEL",
+"Peter from Berlin, Germany registered",
+"Sarah from Cape Town, South Africa activated",
+"Michael from Dubai, UAE joined",
+"Esther from Enugu, Nigeria signed up",
+"Ibrahim from Sokoto, Nigeria activated account",
+"Joy from Ibadan, Nigeria joined NEXTEL",
+"Daniel from Paris, France registered",
+"Jennifer from Nairobi, Kenya activated account",
+"Victor from Lagos, Nigeria joined",
+"Linda from Manchester, UK signed up",
+"Isaac from Ghana activated account",
+"Rose from Abuja, Nigeria joined",
+"Paul from USA registered",
+"Kelvin from Lagos, Nigeria joined",
+"Zainab from Morocco registered",
+"Henry from Canada activated",
+"Nathan from Kenya joined",
+"Uche from Nigeria activated account",
+"Mercy from Lagos, Nigeria registered",
+"Ali from Saudi Arabia joined",
+"Faith from Abuja, Nigeria activated account",
+"Prince from Ghana registered",
+"Victoria from UK joined",
+"Samuel from USA activated",
+"Angela from Nigeria registered",
+"Bright from Lagos, Nigeria joined",
+"Rebecca from Kenya activated account",
+"Godwin from Port Harcourt, Nigeria registered",
+"Janet from Canada joined",
+"Stephen from Egypt activated account",
+"Mary from UK registered",
+"Joshua from Ghana joined",
+"Chioma from Nigeria activated account",
+"Daniel from USA registered",
+"Favour from Lagos, Nigeria joined",
+"Michael from Kenya activated account",
+"Esther from UK registered"
+];
+  function showPopup(){
+const popup=document.getElementById("livePopup");
+const msg=document.getElementById("popupMessage");
+const time=document.getElementById("popupTime");
+
+const randomMsg=messages[Math.floor(Math.random()*messages.length)];
+const randomTime=Math.floor(Math.random()*30)+1;
+
+msg.innerHTML=randomMsg;
+time.innerHTML=randomTime+" minutes ago";
+
+popup.style.display="block";
+
+/* 🔊 STRONG SOUND FIX */
+if(sound){
+sound.volume = 1.0;
+sound.currentTime = 0;
+}
+
+setTimeout(()=>{
+popup.style.display="none";
+},5000);
+}
+
+/* AUTO START SYSTEM */
+window.addEventListener("load",()=>{
+setTimeout(showPopup,3000);
+setInterval(showPopup,7000);
+});
+</script>
+    
+</body>
+  </html>
