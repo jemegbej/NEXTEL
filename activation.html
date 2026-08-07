@@ -14,9 +14,9 @@ body{background:linear-gradient(180deg,var(--green),var(--green2));color:#fff;pa
 <div id=f1 class=card><div class=title>NEXTEL ACCOUNT ACTIVATION</div><p>Activate your account to unlock all earning modules.</p><div class=amount id=fee></div><div class=section><h3>EARNING MODULES</h3><div id=mods></div></div><button class="btn primary" onclick="s(2)">Activate Now</button><button class="btn dark" onclick="location.href='dashboard.html'">Maybe Later</button></div>
 <div id=f2 class="card hide"><div class=title>Secure Payment</div><div class=amount id=amt></div><div class=timer id=t>5:00</div><div class="bank">
 <h3 style="color:var(--lemon);margin-bottom:12px;">🏦 Bank Details</h3>
-<p><strong>Bank Name:</strong> PAGA</p>
-<p><strong>Account Number:</strong> 0365001762</p>
-<p><strong>Account Name:</strong> AYIRI JEMEGBE</p><br>
+<p><strong>Bank Name:</strong> KUDA</p>
+<p><strong>Account Number:</strong> 2078683879</p>
+<p><strong>Account Name:</strong> JOSHUA JEMEGBE</p><br>
 <button class="btn dark" onclick="copyMono()">📋 Copy Account Number</button>
 </div><button class="btn primary" onclick="s(3)">I've Made Payment</button></div>
 <div id=f3 class="card hide"><div class=title>Verification Complete</div><a id=w class="btn primary" target=_blank>Send Proof via WhatsApp</a></div>
@@ -25,5 +25,5 @@ body{background:linear-gradient(180deg,var(--green),var(--green2));color:#fff;pa
 const plan=localStorage.getItem("nextel_plan")||"DIAMOND";
 const d={DIAMOND:{fee:"₦10,500",mods:[["💰 Instant Cashback","₦9,000"],["🤝 Direct Referral","₦7,200"],["📞 Call Rewards","₦5,500"],["📩 SMS Rewards","₦3,000"],["▶️ YouTube Earnings","₦20,000"],["🎁 Spillover Bonus","₦1,000"]]},ROYAL:{fee:"₦17,500",mods:[["💰 Instant Cashback","₦16,000"],["🤝 Direct Referral","₦12,500"],["📞 Call Rewards","₦15,000"],["📩 SMS Rewards","₦10,000"],["▶️ YouTube Premium","₦40,000"],["👻 Snapchat Earnings","₦6,000"],["🎉 Network Bonus","₦8,000"],["📊 Nextel Web Gain","₦50,000"]]}};
 fee.innerText=d[plan].fee;amt.innerText=d[plan].fee;d[plan].mods.forEach(m=>mods.innerHTML+=`<p class=feature>${m[0]} - <b>${m[1]}</b></p>`);
-function s(n){f1.classList.add('hide');f2.classList.add('hide');f3.classList.add('hide');document.getElementById('f'+n).classList.remove('hide');if(n==2){let x=300;let i=setInterval(()=>{t.innerText=Math.floor(x/60)+":"+(x%60).toString().padStart(2,'0');if(--x<0)clearInterval(i)},1000)}if(n==3){w.href="https://wa.me/2347086862033?text="+encodeURIComponent(`Hello NEXTEL Admin, I have completed my activation payment. Plan: ${plan} Amount: ${d[plan].fee}`)}}
-function copyMono(){navigator.clipboard.writeText('0365001762');alert('Account number copied successfully!');}</script></body></html>
+function s(n){f1.classList.add('hide');f2.classList.add('hide');f3.classList.add('hide');document.getElementById('f'+n).classList.remove('hide');if(n==2){let x=300;let i=setInterval(()=>{t.innerText=Math.floor(x/60)+":"+(x%60).toString().padStart(2,'0');if(--x<0)clearInterval(i)},1000)}if(n==3){w.href="https://wa.me/2348101137540?text="+encodeURIComponent(`Hello NEXTEL Admin, I have completed my activation payment. Plan: ${plan} Amount: ${d[plan].fee}`)}}
+function copyMono(){navigator.clipboard.writeText('2078683879');alert('Account number copied successfully!');}</script></body></html>
